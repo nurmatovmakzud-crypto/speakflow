@@ -1,0 +1,43 @@
+/* src/index.css */
+
+/* Brauzerning ortiqcha chekkalarini (margins) yo'qotamiz */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Gorizontal skroll chiqmasligi uchun */
+}
+
+/* Hamma elementlar uchun o'lcham hisoblashni to'g'irlaymiz */
+* {
+  box-sizing: border-box;
+}
+
+/* Tugmalar va bosiladigan elementlar uchun standart effekt */
+button, span, h3 {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98); /* Bosilganda ozgina kichrayadi */
+}
+
+/* Scrollbar dizayni (Dark mode uchun chiroyli ko'rinadi) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c4dff;
+}
